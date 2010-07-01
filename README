@@ -1,0 +1,22 @@
+Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines.
+
+So its more easy to fill out several forms from a textual source. For example: putting a email signature via clipboard to your CRM.
+
+more on
+http://plugins.jquery.com/project/text2form
+http://umija.org/howto%3Atext2form
+
+== Install ==
+Adding this in the htmlhead of your main template.
+
+Include first http://jquery.com and optional http://docs.jquery.com/UI/Dialog
+
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.1.custom.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="ui-lightness/jquery-ui-1.8.1.custom.css" />
+
+
+Include text2form JS and css
+
+	<script type="text/javascript" src="js/jquery.text2form.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.text2form.css" />
