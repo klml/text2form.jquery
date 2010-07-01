@@ -1,0 +1,40 @@
+.t2f_icon {
+	position: absolute;
+	right: 10px;
+	top: 150px;
+}
+
+#ui-dialog-title-t2f {
+	background-image:url(t2f_20.png);
+	background-repeat: no-repeat ;
+	padding-left: 30px;
+	line-height: 20px;
+}
+#t2f textarea {	
+	background-image:url(rainbowbakgrnd.png) ; 
+	padding-top: 0px;
+	margin-top: 14px;
+	font-size:15px;
+	line-height:21px;
+	min-height: 500px ;
+	width: 98% ;
+}
+#t2f textarea:hover, input:hover { border: 1px solid blue ; }
+.t2f_icon img {	border: none; }
+.farbe0, .farbe10 { background-color: #C8EF68 ; }
+.farbe1, .farbe11 { background-color: #D5EF95 ; }
+.farbe2, .farbe12 { background-color: #E2EFC2 ; }
+.farbe3, .farbe13 { background-color: #77B9EF ; }
+.farbe4, .farbe14 { background-color: #B3D4EF ; }
+.farbe5, .farbe15 { background-color: #95C7EF ; }
+.farbe6, .farbe16 { background-color: #EFB859 ; }
+.farbe7, .farbe17 { background-color: #EFC377 ; }
+.farbe8, .farbe18 { background-color: #EFD9B3 ; }
+.farbe9, .farbe19 { background-color: #77B9EF ; }
+
+body > div#t2f {  /* position textarea if not using dialog */
+position: absolute; 
+right: 2px;
+top: 100px;
+width: 150px;
+}
