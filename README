@@ -4,7 +4,7 @@ So its more easy to fill out several forms from a textual source. For example: p
 
 more on
 http://plugins.jquery.com/project/text2form
-http://umija.org/howto%3Atext2form
+http://umija.org/howto:text2form
 
 == Install ==
 Adding this in the htmlhead of your main template.
