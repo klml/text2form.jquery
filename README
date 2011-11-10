@@ -6,6 +6,9 @@ more on
 http://plugins.jquery.com/project/text2form
 http://umija.org/howto:text2form
 
+demo
+http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html
+
 == Install ==
 Adding this in the htmlhead of your main template.
 
@@ -25,4 +28,4 @@ Settings
 	<script>
 	var DOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
 	var forms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
-    </script>
+	</script>
