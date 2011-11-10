@@ -1,4 +1,4 @@
-var textfieldt2f = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>blanklines</button><button>spaces</button></div>"
+var textfieldt2f = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>spaces</button><button>blanklines</button></div>"
 var DOMstart = 'body' ;
 var forms = 'input:text' ;
 
