@@ -1,7 +1,12 @@
-.t2f_icon {
+button.t2f_icon {
 	position: absolute;
 	right: 10px;
 	top: 150px;
+	background-image:url(t2f_50.png);
+	width: 50px;
+	height: 50px;
+	border: 0;
+	color: gray;
 }
 
 #ui-dialog-title-t2f {
@@ -21,16 +26,20 @@
 }
 #t2f textarea:hover, input:hover { border: 1px solid blue ; }
 .t2f_icon img {	border: none; }
-.farbe0, .farbe10 { background-color: #C8EF68 ; }
-.farbe1, .farbe11 { background-color: #D5EF95 ; }
-.farbe2, .farbe12 { background-color: #E2EFC2 ; }
-.farbe3, .farbe13 { background-color: #77B9EF ; }
-.farbe4, .farbe14 { background-color: #B3D4EF ; }
-.farbe5, .farbe15 { background-color: #95C7EF ; }
-.farbe6, .farbe16 { background-color: #EFB859 ; }
-.farbe7, .farbe17 { background-color: #EFC377 ; }
-.farbe8, .farbe18 { background-color: #EFD9B3 ; }
-.farbe9, .farbe19 { background-color: #77B9EF ; }
+.rainbow0, .rainbow10 { background-color: #C8EF68 ; }
+.rainbow1, .rainbow11 { background-color: #D5EF95 ; }
+.rainbow2, .rainbow12 { background-color: #E2EFC2 ; }
+.rainbow3, .rainbow13 { background-color: #77B9EF ; }
+.rainbow4, .rainbow14 { background-color: #B3D4EF ; }
+.rainbow5, .rainbow15 { background-color: #95C7EF ; }
+.rainbow6, .rainbow16 { background-color: #EFB859 ; }
+.rainbow7, .rainbow17 { background-color: #EFC377 ; }
+.rainbow8, .rainbow18 { background-color: #EFD9B3 ; }
+.rainbow9, .rainbow19 { background-color: #77B9EF ; }
+#t2f button {
+margin: 0 2px;
+}
+
 
 body > div#t2f {  /* position textarea if not using dialog */
 position: absolute; 

@@ -20,3 +20,9 @@ Include text2form JS and css
 
 	<script type="text/javascript" src="js/jquery.text2form.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.text2form.css" />
+
+Settings
+	<script>
+	var DOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
+	var forms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+    </script>
