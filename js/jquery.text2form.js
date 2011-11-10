@@ -1,9 +1,10 @@
+var buttonhook = 'body' ;
 var textfieldt2f = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>spaces</button><button>blanklines</button></div>"
 var DOMstart = 'body' ;
 var forms = 'input:text' ;
 
 jQuery(document).ready(function() {
- $("<button class='t2f_icon'>t2f</button>").appendTo(document.body);
+ $("<button class='t2f_icon'>text 2 form</button>").appendTo(buttonhook);
  $('.t2f_icon').click(function() {     
   t2f_load() ;
  });
