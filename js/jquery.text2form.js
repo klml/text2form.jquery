@@ -1,23 +1,17 @@
-var buttonhook = 'body' ;
-var textfieldt2f = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>spaces</button><button>blanklines</button></div>"
-var DOMstart = 'body' ;
-var forms = 'input:text' ;
-
-jQuery(document).ready(function() {
- $("<button class='t2f_icon'>text 2 form</button>").appendTo(buttonhook);
- $('.t2f_icon').click(function() {     
-  t2f_load() ;
- });
-});
+var t2fbutton = "<button class='t2f_icon'>text 2 form</button>" ;
+var t2fbuttonhook = 'body' ;
+var t2ftextfield = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>spaces</button><button>blanklines</button></div>"
+var t2fDOMstart = 'body' ;
+var t2fforms = 'input:text' ;
 
 function t2f_load () {
-  allInputs = $(DOMstart + ' ' + forms);
+  allInputs = $(t2fDOMstart + ' ' + t2fforms);
   allInputs.each(function(i) {
    $(this).addClass("rainbow" + (i) ); // spread colors
    $(this).attr( { 'onblur' : 't2f_f2t (value)' } )  ; // use 'onblur' while typing or 'onchange' 
   });
 
-   $("body").append(textfieldt2f);
+   $("body").append(t2ftextfield);
    $( "#t2f" ).dialog( { show: 'blind', position: ['right', 150], }); // line is optional http://docs.jquery.com/UI/Dialog
    t2f_f2t () ; // import existing data first
 

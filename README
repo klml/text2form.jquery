@@ -24,9 +24,15 @@ Include text2form JS and css
 
 Settings
 	<script>
-	var buttonhook = '#content' ; // place t2f botton is appended default 'body'
-	var DOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
-	var forms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+	var t2fbuttonhook = '#content' ; // place t2f botton is appended default 'body'
+	var t2fDOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
+	var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+	jQuery(document).ready(function() {
+		$(t2fbutton).appendTo(t2fbuttonhook);
+		$('.t2f_icon').click(function() {     
+			t2f_load() ;
+		});
+	});
 	</script>
 	
 	
@@ -44,7 +50,14 @@ Just paste this to your html code, customize and try t2f
 	<style>button.t2f_icon { background-image:url(http://www.23hq.com/23666/5586283_84e302c8cb6c4447b48466906b411453_quad50.jpg); }</style>
 	<script>
 	// CUSTOMIZE this
-	var buttonhook = 'body' ; // place t2f botton is appended default 'body'
-	var DOMstart = 'body' ; // Domnnode to start grabbing default 'body'
-	var forms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+	var t2fbuttonhook = 'body' ; // place t2f botton is appended default 'body'
+	var t2fDOMstart = 'body' ; // Domnnode to start grabbing default 'body'
+	var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+	
+	jQuery(document).ready(function() {
+		$(t2fbutton).appendTo(t2fbuttonhook);
+		$('.t2f_icon').click(function() {     
+			t2f_load() ;
+		});
+	});
 	</script>
