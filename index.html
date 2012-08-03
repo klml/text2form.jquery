@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Text2form.jquery : Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Text2form.jquery</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/klml/text2form.jquery">View on GitHub</a>
+
+          <h1 id="project_title">Text2form.jquery</h1>
+          <h2 id="project_tagline">Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/klml/text2form.jquery/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/klml/text2form.jquery/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines.</p>
+
+<p>So its more easy to fill out several forms from a textual source. For example: putting a email signature via clipboard to your CRM.</p>
+
+<p>more on <a href="http://umija.org/howto:text2form">http://umija.org/howto:text2form</a></p>
+
+<p>demo
+<a href="http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html">http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html</a></p>
+
+<h2>Install</h2>
+
+<p>Adding this in the htmlhead of your main template.</p>
+
+<p>Include first <a href="http://jquery.com">http://jquery.com</a> and optional <a href="http://docs.jquery.com/UI/Dialog">http://docs.jquery.com/UI/Dialog</a></p>
+
+<p>`</p>
+
+<p>
+`</p>
+
+<p>Include text2form JS and css</p>
+
+<p>`</p>
+
+<p>
+`</p>
+
+<p>Settings</p>
+
+<p>`</p>
+
+
+var t2fbuttonhook = '#content' ; // place t2f botton is appended default 'body'
+var t2fDOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
+var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+jQuery(document).ready(function() {
+    $(t2fbutton).appendTo(t2fbuttonhook);
+    $('.t2f_icon').click(function() {     
+        t2f_load() ;
+    });
+});
+<p>`</p>
+
+<h3>Quicksnippet</h3>
+
+<p>For this Quicksnippet you dont have to download all sources. But these are from jquery, github, 23hq.com and my own server, so don't expect to much QoS ;)</p>
+
+<p>Just paste this to your html code, customize and try t2f</p>
+
+<p>`</p>
+
+<p></p>
+
+<p></p>
+
+button.t2f_icon { background-image:url(http://www.23hq.com/23666/5586283_84e302c8cb6c4447b48466906b411453_quad50.jpg); }
+// CUSTOMIZE this
+var t2fbuttonhook = 'body' ; // place t2f botton is appended default 'body'
+var t2fDOMstart = 'body' ; // Domnnode to start grabbing default 'body'
+var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+
+jQuery(document).ready(function() {
+    $(t2fbutton).appendTo(t2fbuttonhook);
+    $('.t2f_icon').click(function() {     
+        t2f_load() ;
+    });
+});
+<p>`</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Text2form.jquery maintained by <a href="https://github.com/klml">klml</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
