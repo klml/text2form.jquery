@@ -12,8 +12,6 @@
   </head>
 
   <body>
-
-    <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/klml/text2form.jquery">View on GitHub</a>
@@ -28,17 +26,46 @@
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <p>Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines.</p>
 
 <p>So its more easy to fill out several forms from a textual source. For example: putting a email signature via clipboard to your CRM.</p>
 
-<p>more on <a href="http://umija.org/howto:text2form">http://umija.org/howto:text2form</a></p>
+<p>more on <a href="http://umija.org/howto:text2form">umija.org/howto:text2form</a></p>
 
-<p>demo
-<a href="http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html">http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html</a></p>
+
+<h2>Demo</h2>
+
+
+<form method="post" id="t2frequest" action="no_post.html" style="width:380px;" class="row2">
+<dl>
+<dt>First name</dt>
+<dd><input type="text" name="fname" /></dd>
+<dt>Last name</dt>
+<dd><input type="text" name="lname" /></dd>
+<dt>Street</dt>
+<dd><input type="text" name="street" /></dd>
+<dt>City</dt>
+<dd><input type="text" name="city" /></dd>
+<dt>Country</dt>
+<dd><input type="text" name="country" id="country" /></dd>
+<dt>Phone number</dt>
+<dd><input type="text" name="tel" /></dd>
+<dt>email</dt>
+<dd><input type="text" name="email" /></dd>
+<dt>Message</dt>
+<dd><textarea name="message" ></textarea></dd>
+</dl>
+
+<button>send</button></p>
+
+</form>
+
+
+
+<p>text2form with an "real" <a href="http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html">sugarcrm form</a>.</p>
+
 
 <h2>Install</h2>
 
@@ -46,23 +73,15 @@
 
 <p>Include first <a href="http://jquery.com">http://jquery.com</a> and optional <a href="http://docs.jquery.com/UI/Dialog">http://docs.jquery.com/UI/Dialog</a></p>
 
-<p>`</p>
-
-<p>
-`</p>
 
 <p>Include text2form JS and css</p>
 
-<p>`</p>
+<pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;//code.jquery.com/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.text2form.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/jquery.text2form.css&quot; /&gt;
 
-<p>
-`</p>
-
-<p>Settings</p>
-
-<p>`</p>
-
-
+&lt;script type=&quot;text/javascript&quot; &gt;
 var t2fbuttonhook = '#content' ; // place t2f botton is appended default 'body'
 var t2fDOMstart = 'form.entry' ; // Domnnode to start grabbing default 'body'
 var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
@@ -72,7 +91,9 @@ jQuery(document).ready(function() {
         t2f_load() ;
     });
 });
-<p>`</p>
+&lt;/script&gt;
+</pre>
+
 
 <h3>Quicksnippet</h3>
 
@@ -80,37 +101,66 @@ jQuery(document).ready(function() {
 
 <p>Just paste this to your html code, customize and try t2f</p>
 
-<p>`</p>
 
-<p></p>
+<pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery.min.js&quot;&gt;&lt;/script&gt;
 
-<p></p>
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://bit.umija.de/proj/text2form/jquery.text2form/jquery-ui-1.8.1.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://raw.github.com/klml/text2form.jquery/master/js/jquery.text2form.js&quot;&gt;&lt;/script&gt;
 
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://bit.umija.de/proj/text2form/jquery.text2form/ui-lightness/jquery-ui-1.8.1.custom.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://bit.umija.de/proj/text2form/jquery.text2form/css/jquery.text2form.css&quot; /&gt;
+
+&lt;style&gt;
 button.t2f_icon { background-image:url(http://www.23hq.com/23666/5586283_84e302c8cb6c4447b48466906b411453_quad50.jpg); }
-// CUSTOMIZE this
-var t2fbuttonhook = 'body' ; // place t2f botton is appended default 'body'
-var t2fDOMstart = 'body' ; // Domnnode to start grabbing default 'body'
-var t2fforms = 'input:text' ; //Domnnode to grap 'textarea' 'input' etc  default 'input:text' to hide hidden
+&lt;/style&gt;
 
+&lt;script type=&quot;text/javascript&quot; &gt;
 jQuery(document).ready(function() {
     $(t2fbutton).appendTo(t2fbuttonhook);
     $('.t2f_icon').click(function() {     
         t2f_load() ;
     });
 });
-<p>`</p>
-      </section>
+&lt;/script&gt;
+</pre>
+
+
+
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">Text2form.jquery maintained by <a href="https://github.com/klml">klml</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-    
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://bit.umija.de/proj/text2form/jquery.text2form/jquery-ui-1.8.1.custom.min.js"></script>
+<script type="text/javascript" src="https://raw.github.com/klml/text2form.jquery/master/js/jquery.text2form.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://bit.umija.de/proj/text2form/jquery.text2form/ui-lightness/jquery-ui-1.8.1.custom.css" />
+<link rel="stylesheet" type="text/css" href="http://bit.umija.de/proj/text2form/jquery.text2form/css/jquery.text2form.css" />
+
+<style>
+button.t2f_icon { background-image:url(http://www.23hq.com/23666/5586283_84e302c8cb6c4447b48466906b411453_quad50.jpg); }
+</style>
+
+<script type="text/javascript" >
+jQuery(document).ready(function() {
+    var t2fbuttonhook = '#t2frequest' ;
+    var t2fDOMstart = '#t2frequest' ;
+    var t2fforms = 'input' ; 
+    $(t2fbutton).appendTo(t2fbuttonhook);
+    $('.t2f_icon').click(function() {     
+        t2f_load() ;
+        return false;
+    });
+});
+</script>
 
   </body>
 </html>
