@@ -2,9 +2,10 @@ Filling many inputs (Addressforms, Applications, Payments etc) with content from
 
 So its more easy to fill out several forms from a textual source. For example: putting a email signature via clipboard to your CRM.
 
-more on [umija.org/howto:text2form](http://umija.org/howto:text2form)
 
-[demo on github](http://klml.github.com/text2form.jquery/)
+[easy demo on github](http://klml.github.com/text2form.jquery/)
+
+text2form with an "real" [sugarcrm form](http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html) and more on [umija.org/howto:text2form](http://umija.org/howto:text2form)
 
 ## Install
 Adding this in the htmlhead of your main template.
