@@ -39,20 +39,16 @@ Just paste this to your html code, customize and try t2f
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <script type="text/javascript" src="http://bit.umija.de/proj/text2form/jquery.text2form/jquery-ui-1.8.1.custom.min.js"></script>
-<script type="text/javascript" src="https://raw.github.com/klml/text2form.jquery/master/js/jquery.text2form.js"></script>
+<script type="text/javascript" src="https://raw.github.com/klml/text2form.jquery/master/css/jquery.text2form.css"></script>
 
 
 <link rel="stylesheet" type="text/css" href="http://bit.umija.de/proj/text2form/jquery.text2form/ui-lightness/jquery-ui-1.8.1.custom.css" />
-<link rel="stylesheet" type="text/css" href="http://bit.umija.de/proj/text2form/jquery.text2form/css/jquery.text2form.css" />
-
-<style>
-button.t2f_icon { background-image:url(http://www.23hq.com/23666/5586283_84e302c8cb6c4447b48466906b411453_quad50.jpg); }
-</style>
+<link rel="stylesheet" type="text/css" href="https://raw.github.com/klml/text2form.jquery/master/js/jquery.text2form.js" />
 
 <script type="text/javascript" >
 jQuery(document).ready(function() {
     $(t2fbutton).appendTo(t2fbuttonhook);
-    $('.t2f_icon').click(function() {     
+    $('.t2f_icon').click(function() {
         t2f_load() ;
     });
 });
