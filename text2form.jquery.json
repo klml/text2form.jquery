@@ -1,0 +1,27 @@
+{
+    "name": "text2form",
+    "title": "text2form",
+    "description": "Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines.",
+    "keywords": [
+        "text",
+        "form"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "klml",
+        "url": "http://klml.de"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/klml/text2form.jquery/issues",
+    "homepage": "https://github.com/klml/text2form.jquery/",
+    "docs": "https://github.com/klml/text2form.jquery/",
+    "download": "http://code.jquery.com/#color",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
