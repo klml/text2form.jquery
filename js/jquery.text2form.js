@@ -5,7 +5,7 @@ var t2fDOMstart = 'body' ;
 var t2fforms = 'input:text' ;
 
 function t2f_load () {
-  allInputs = $(t2fDOMstart + ' ' + t2fforms);
+  allInputs = $(t2fDOMstart).find(t2fforms);
   allInputs.each(function(i) {
    $(this).addClass("rainbow" + (i) ); // spread colors
    $(this).attr( { 'onblur' : 't2f_f2t (value)' } )  ; // use 'onblur' while typing or 'onchange' 
