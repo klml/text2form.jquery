@@ -7,6 +7,8 @@ So its more easy to fill out several forms from a textual source. For example: p
 
 text2form with an "real" [sugarcrm form](http://bit.umija.de/proj/text2form/jquery.text2form/jquery.text2form_sugarcrm.html) and more on [umija.org/howto:text2form](http://umija.org/howto:text2form)
 
+This is a plugon for websites, you can have this also as [browser addon](https://github.com/klml/text2form.addon).
+
 ## Install
 Adding this in the htmlhead of your main template.
 
