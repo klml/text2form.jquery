@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Text2form.jquery : Filling many inputs (Addressforms, Applications, Payments etc) with content from a textarea separated by Newlines" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Text2form</title>
+    <style>
+    button.t2f_icon {
+    top: 275px !important;
+    }
+    .testtext {
+        width: 100%;
+        height: 350px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/klml/text2form.jquery">View on GitHub</a>
+
+          <h1 id="project_title">Test Text2form</h1>
+          <h2 id="project_tagline">Testform for <a href="https://github.com/klml/text2form.jquery">github.com/klml/text2form.jquery</a> and <a href="https://github.com/klml/text2form.addon" >github.com/klml/text2form.addon</a>.
+          </h2>
+        </header>
+    </div>
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          <p>Use this <a href="#testtext">testtext</a>.</p>
+
+
+<h2>Testform</h2>
+
+All kind of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">input elements</a>.
+
+<form action="/" method="get" id="t2frequest">
+
+<p>textarea</p>         <textarea></textarea><br />
+
+<p>button</p>           <input type="button" value="button"><br />
+<p>checkbox</p>         <input type="checkbox" value="checkcheck"><br />
+<p>color</p>            <input type="color"><br />
+<p>date</p>             <input type="date"><br />
+<p>datetime-local</p>   <input type="datetime-local"><br />
+<p>email</p>            <input type="email"><br />
+<p>file</p>             <input type="file"><br />
+<p>hidden</p>           <input type="hidden"><br />
+<p>image</p>            <input type="image"><br />
+<p>month</p>            <input type="month"><br />
+<p>number</p>           <input type="number"><br />
+<p>password</p>         <input type="password"><br />
+<p>radio</p>            <input type="radio" name="radio" value="gaga"><br />
+<p>range</p>            <input type="range"><br />
+<p>reset</p>            <input type="reset" value="reset"><br />
+<p>search</p>           <input type="search"><br />
+<p>submit</p>           <input type="submit" value="Submit"><br />
+<p>tel</p>              <input type="tel"><br />
+<p>text</p>             <input type="text"><br />
+<p>time</p>             <input type="time"><br />
+<p>url</p>              <input type="url"><br />
+<p>week</p>             <input type="week"><br />
+
+</form>
+   
+<h3 id="testtext" >Testtext</h3>
+<textarea class="testtext">
+textarea
+#D14D6F
+2000-02-11
+2001-05-25
+test@example.com
+2001-11
+42
+secret
+searchterm
++411234567
+lorem
+13:37
+https://example.com
+42
+</textarea>
+       
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Text2form.jquery maintained by <a href="https://github.com/klml">klml</a></p>
+      </footer>
+    </div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,npm/jqueryui@1.11.1"></script>
+<script type="text/javascript" src="./js/jquery.text2form.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-ui@1.12.1/themes/base/all.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.text2form.css" />
+
+<script type="text/javascript" >
+jQuery(document).ready(function() {
+    var t2fbuttonhook = '#t2frequest' ;
+    var t2fDOMstart = '#t2frequest' ;
+    $(t2fbutton).appendTo(t2fbuttonhook);
+    $('.t2f_icon').click(function() {
+        t2f_load() ;
+        return false;
+    });
+});
+</script>
+
+  </body>
+</html>
