@@ -2,7 +2,7 @@ var t2fbutton = "<button class='t2f_icon'>text 2 form</button>" ;
 var t2fbuttonhook = 'body' ;
 var t2ftextfield = "<div id='t2f' ><textarea></textarea><br />make2newline: <button>tabs</button><button>spaces</button><button>blanklines</button></div>"
 var t2fDOMstart = 'body' ;
-var t2fforms = 'input:text' ;
+var t2fforms = 'input:not(:disabled):not([readonly]):not([type=hidden]):not([type=submit]):not([type=image]):not([type=button]):not([type=file]):not([type=checkbox]):not([type=radio]):not([type=range]):not([type=reset]), textarea' ;
 
 function t2f_load () {
   allInputs = $(t2fDOMstart).find(t2fforms);
