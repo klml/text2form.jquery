@@ -30,6 +30,9 @@ jQuery(document).ready(function() {
 
 Optional you can use [jquery.com/UI/Dialog](http://docs.jquery.com/UI/Dialog)
 
+
+[Testpage](https://klml.github.io/text2form.jquery/test.html) with all kind of input types.
+
 ## Quicksnippet
 
 For this Quicksnippet you dont have to download all sources. But these are from jquery, github, 23hq.com and my own server, so don't expect to much QoS ;)
